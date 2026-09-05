@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -28,182 +27,181 @@
     --green: #22c55e;
   }
 
-/* HEADER */
-#header {
-background: var(–blue);
-text-align: center;
-padding-top: env(safe-area-inset-top, 20px);
-padding-top: max(env(safe-area-inset-top), 20px);
-box-shadow: 0 2px 12px rgba(26,58,143,0.3);
-}
-#header-inner { padding: 12px 0 0; }
-.logo-circle {
-width: 64px; height: 64px;
-background: var(–blue-light);
-border-radius: 50%;
-margin: 0 auto 6px;
-display: flex; align-items: center; justify-content: center;
-border: 3px solid rgba(255,255,255,0.3);
-font-size: 34px;
-}
-.club-name { color: #fff; font-size: 18px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
-.club-sub { color: rgba(255,255,255,0.7); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; margin-top: 2px; }
+  /* HEADER */
+  #header {
+    background: var(--blue);
+    text-align: center;
+    padding-top: env(safe-area-inset-top, 20px);
+    padding-top: max(env(safe-area-inset-top), 20px);
+    box-shadow: 0 2px 12px rgba(26,58,143,0.3);
+  }
+  #header-inner { padding: 12px 0 0; }
+  .logo-circle {
+    width: 64px; height: 64px;
+    background: var(--blue-light);
+    border-radius: 50%;
+    margin: 0 auto 6px;
+    display: flex; align-items: center; justify-content: center;
+    border: 3px solid rgba(255,255,255,0.3);
+    font-size: 34px;
+  }
+  .club-name { color: #fff; font-size: 18px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+  .club-sub { color: rgba(255,255,255,0.7); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; margin-top: 2px; }
 
-/* TABS */
-#tabs { display: flex; border-top: 1px solid rgba(255,255,255,0.15); }
-.tab-btn {
-flex: 1; padding: 10px 4px 12px;
-background: transparent; color: rgba(255,255,255,0.5);
-border: none; border-bottom: 3px solid transparent;
-cursor: pointer; font-size: 10px; font-weight: 400;
-letter-spacing: 0.06em; text-transform: uppercase;
-display: flex; flex-direction: column; align-items: center; gap: 2px;
-font-family: inherit; transition: all 0.2s;
-}
-.tab-btn.active { color: #fff; border-bottom: 3px solid #fff; font-weight: 700; }
-.tab-icon { font-size: 18px; }
+  /* TABS */
+  #tabs { display: flex; border-top: 1px solid rgba(255,255,255,0.15); }
+  .tab-btn {
+    flex: 1; padding: 10px 4px 12px;
+    background: transparent; color: rgba(255,255,255,0.5);
+    border: none; border-bottom: 3px solid transparent;
+    cursor: pointer; font-size: 10px; font-weight: 400;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+    font-family: inherit; transition: all 0.2s;
+  }
+  .tab-btn.active { color: #fff; border-bottom: 3px solid #fff; font-weight: 700; }
+  .tab-icon { font-size: 18px; }
 
-/* CONTENT */
-#content { padding: 16px; max-width: 600px; margin: 0 auto; padding-bottom: 40px; }
+  /* CONTENT */
+  #content { padding: 16px; max-width: 600px; margin: 0 auto; padding-bottom: 40px; }
 
-/* SECTION TITLE */
-.section-title { font-size: 18px; font-weight: 800; color: var(–blue); margin-bottom: 4px; }
-.section-sub { font-size: 13px; color: #64748b; margin-bottom: 14px; }
+  /* SECTION TITLE */
+  .section-title { font-size: 18px; font-weight: 800; color: var(--blue); margin-bottom: 4px; }
+  .section-sub { font-size: 13px; color: #64748b; margin-bottom: 14px; }
 
-/* SQUAD HEADER ROW */
-.squad-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-.badge { background: var(–blue); color: #fff; border-radius: 20px; padding: 3px 12px; font-size: 12px; font-weight: 700; }
+  /* SQUAD HEADER ROW */
+  .squad-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .badge { background: var(--blue); color: #fff; border-radius: 20px; padding: 3px 12px; font-size: 12px; font-weight: 700; }
 
-/* COLUMN LABELS */
-.col-labels { display: grid; grid-template-columns: 1fr 90px 30px; gap: 8px; padding: 0 14px; margin-bottom: 4px; }
-.col-label { font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+  /* COLUMN LABELS */
+  .col-labels { display: grid; grid-template-columns: 1fr 90px 30px; gap: 8px; padding: 0 14px; margin-bottom: 4px; }
+  .col-label { font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
 
-/* PLAYER CARD */
-.player-card {
-background: var(–card); border-radius: 10px; padding: 10px 12px;
-margin-bottom: 8px; border-left: 4px solid var(–blue);
-box-shadow: 0 1px 4px rgba(26,58,143,0.08);
-}
-.player-row { display: grid; grid-template-columns: 1fr 90px 30px; gap: 8px; align-items: center; margin-bottom: 6px; }
-.player-name-wrap { display: flex; align-items: center; gap: 8px; }
-.player-num {
-width: 26px; height: 26px; border-radius: 50%;
-background: var(–blue); color: #fff;
-display: flex; align-items: center; justify-content: center;
-font-size: 11px; font-weight: 800; flex-shrink: 0;
-}
-.player-name { font-weight: 700; font-size: 15px; }
-.player-reg { font-size: 13px; font-weight: 700; color: var(–blue); }
-.player-reg.empty { color: #94a3b8; }
-.edit-btn { background: none; border: none; cursor: pointer; font-size: 16px; padding: 2px; }
-.player-notes {
-width: 100%; background: var(–bg); border: 1px solid #e2e8f0;
-border-radius: 6px; color: #475569; font-size: 13px;
-padding: 6px 8px; resize: none; font-family: inherit;
-}
+  /* PLAYER CARD */
+  .player-card {
+    background: var(--card); border-radius: 10px; padding: 10px 12px;
+    margin-bottom: 8px; border-left: 4px solid var(--blue);
+    box-shadow: 0 1px 4px rgba(26,58,143,0.08);
+  }
+  .player-row { display: grid; grid-template-columns: 1fr 90px 30px; gap: 8px; align-items: center; margin-bottom: 6px; }
+  .player-name-wrap { display: flex; align-items: center; gap: 8px; }
+  .player-num {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--blue); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 800; flex-shrink: 0;
+  }
+  .player-name { font-weight: 700; font-size: 15px; }
+  .player-reg { font-size: 13px; font-weight: 700; color: var(--blue); }
+  .player-reg.empty { color: #94a3b8; }
+  .edit-btn { background: none; border: none; cursor: pointer; font-size: 16px; padding: 2px; }
+  .player-notes {
+    width: 100%; background: var(--bg); border: 1px solid #e2e8f0;
+    border-radius: 6px; color: #475569; font-size: 13px;
+    padding: 6px 8px; resize: none; font-family: inherit;
+  }
 
-/* EDIT FORM */
-.edit-form { display: flex; flex-direction: column; gap: 8px; }
-.edit-row { display: grid; grid-template-columns: 1fr 90px; gap: 8px; }
-.edit-input {
-background: var(–bg); border: 2px solid var(–blue);
-color: #1a1a2e; border-radius: 6px; padding: 8px 10px;
-font-size: 14px; font-weight: 700; font-family: inherit; width: 100%;
-}
-.save-btn {
-background: var(–blue); color: #fff; border: none;
-border-radius: 6px; padding: 8px 18px; font-weight: 700;
-font-size: 13px; cursor: pointer; font-family: inherit; align-self: flex-start;
-}
+  /* EDIT FORM */
+  .edit-form { display: flex; flex-direction: column; gap: 8px; }
+  .edit-row { display: grid; grid-template-columns: 1fr 90px; gap: 8px; }
+  .edit-input {
+    background: var(--bg); border: 2px solid var(--blue);
+    color: #1a1a2e; border-radius: 6px; padding: 8px 10px;
+    font-size: 14px; font-weight: 700; font-family: inherit; width: 100%;
+  }
+  .save-btn {
+    background: var(--blue); color: #fff; border: none;
+    border-radius: 6px; padding: 8px 18px; font-weight: 700;
+    font-size: 13px; cursor: pointer; font-family: inherit; align-self: flex-start;
+  }
 
-/* ADD PLAYER */
-.add-card {
-background: var(–card); border-radius: 10px; padding: 14px;
-border: 2px dashed var(–blue-light); margin-top: 4px;
-box-shadow: 0 1px 4px rgba(26,58,143,0.08);
-}
-.add-title { font-size: 13px; font-weight: 700; color: var(–blue); margin-bottom: 8px; }
-.add-row { display: grid; grid-template-columns: 1fr 90px; gap: 8px; margin-bottom: 8px; }
-.add-input {
-background: var(–bg); border: 1px solid #e2e8f0;
-border-radius: 6px; color: #1a1a2e; padding: 9px 12px;
-font-size: 14px; font-family: inherit; width: 100%;
-}
-.add-btn {
-width: 100%; background: var(–blue); border: none; border-radius: 8px;
-color: #fff; padding: 11px; font-weight: 700; font-size: 14px;
-cursor: pointer; font-family: inherit; text-transform: uppercase; letter-spacing: 0.06em;
-}
+  /* ADD PLAYER */
+  .add-card {
+    background: var(--card); border-radius: 10px; padding: 14px;
+    border: 2px dashed var(--blue-light); margin-top: 4px;
+    box-shadow: 0 1px 4px rgba(26,58,143,0.08);
+  }
+  .add-title { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+  .add-row { display: grid; grid-template-columns: 1fr 90px; gap: 8px; margin-bottom: 8px; }
+  .add-input {
+    background: var(--bg); border: 1px solid #e2e8f0;
+    border-radius: 6px; color: #1a1a2e; padding: 9px 12px;
+    font-size: 14px; font-family: inherit; width: 100%;
+  }
+  .add-btn {
+    width: 100%; background: var(--blue); border: none; border-radius: 8px;
+    color: #fff; padding: 11px; font-weight: 700; font-size: 14px;
+    cursor: pointer; font-family: inherit; text-transform: uppercase; letter-spacing: 0.06em;
+  }
 
-/* GAME DAY */
-.quarter-btns { display: flex; gap: 8px; margin-bottom: 16px; }
-.q-btn {
-flex: 1; padding: 12px 4px; background: var(–card);
-border: 2px solid #e2e8f0; border-radius: 8px;
-color: #64748b; font-weight: 800; font-size: 15px;
-cursor: pointer; font-family: inherit; transition: all 0.15s;
-}
-.q-btn.active {
-background: var(–blue); border-color: var(–blue);
-color: #fff; box-shadow: 0 2px 8px rgba(26,58,143,0.3);
-}
-.q-label { font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-.player-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
-.game-player {
-background: var(–card); border: 2px solid #e2e8f0;
-border-radius: 10px; padding: 10px 12px;
-cursor: pointer; display: flex; align-items: center; gap: 8px;
-box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: all 0.15s;
-}
-.game-player.played { background: #f0fdf4; border-color: var(–green); }
-.game-player.warning { background: #fef2f2; border-color: #ef4444; }
-.game-player-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
-.game-player-reg { font-size: 11px; color: #94a3b8; }
-.game-player-warn { font-size: 11px; color: #ef4444; font-weight: 700; }
-.check-icon { font-size: 20px; flex-shrink: 0; }
+  /* GAME DAY */
+  .quarter-btns { display: flex; gap: 8px; margin-bottom: 16px; }
+  .q-btn {
+    flex: 1; padding: 12px 4px; background: var(--card);
+    border: 2px solid #e2e8f0; border-radius: 8px;
+    color: #64748b; font-weight: 800; font-size: 15px;
+    cursor: pointer; font-family: inherit; transition: all 0.15s;
+  }
+  .q-btn.active {
+    background: var(--blue); border-color: var(--blue);
+    color: #fff; box-shadow: 0 2px 8px rgba(26,58,143,0.3);
+  }
+  .q-label { font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .player-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+  .game-player {
+    background: var(--card); border: 2px solid #e2e8f0;
+    border-radius: 10px; padding: 10px 12px;
+    cursor: pointer; display: flex; align-items: center; gap: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: all 0.15s;
+  }
+  .game-player.played { background: #f0fdf4; border-color: var(--green); }
+  .game-player.warning { background: #fef2f2; border-color: #ef4444; }
+  .game-player-name { font-weight: 700; font-size: 14px; color: #1a1a2e; }
+  .game-player-reg { font-size: 11px; color: #94a3b8; }
+  .game-player-warn { font-size: 11px; color: #ef4444; font-weight: 700; }
+  .check-icon { font-size: 20px; flex-shrink: 0; }
 
-/* SUMMARY */
-.summary-card { background: var(–card); border-radius: 12px; padding: 16px; box-shadow: 0 1px 4px rgba(26,58,143,0.08); }
-.summary-title { font-size: 15px; font-weight: 800; color: var(–blue); margin-bottom: 12px; }
-.summary-grid { display: grid; grid-template-columns: auto 50px 1fr auto; gap: 8px 10px; align-items: center; }
-.summary-head { font-size: 10px; color: #94a3b8; font-weight: 700; letter-spacing: 0.08em; }
-.summary-name { font-size: 13px; font-weight: 700; }
-.summary-reg { font-size: 12px; color: #64748b; }
-.q-dots { display: flex; gap: 3px; }
-.q-dot {
-width: 22px; height: 22px; border-radius: 4px;
-display: inline-flex; align-items: center; justify-content: center;
-font-size: 10px; font-weight: 700;
-background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0;
-}
-.q-dot.played { background: var(–blue); color: #fff; border-color: var(–blue); }
-.summary-total { font-size: 13px; font-weight: 800; color: var(–blue); }
-.summary-total.warn { color: #ef4444; }
+  /* SUMMARY */
+  .summary-card { background: var(--card); border-radius: 12px; padding: 16px; box-shadow: 0 1px 4px rgba(26,58,143,0.08); }
+  .summary-title { font-size: 15px; font-weight: 800; color: var(--blue); margin-bottom: 12px; }
+  .summary-grid { display: grid; grid-template-columns: auto 50px 1fr auto; gap: 8px 10px; align-items: center; }
+  .summary-head { font-size: 10px; color: #94a3b8; font-weight: 700; letter-spacing: 0.08em; }
+  .summary-name { font-size: 13px; font-weight: 700; }
+  .summary-reg { font-size: 12px; color: #64748b; }
+  .q-dots { display: flex; gap: 3px; }
+  .q-dot {
+    width: 22px; height: 22px; border-radius: 4px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 700;
+    background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0;
+  }
+  .q-dot.played { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .summary-total { font-size: 13px; font-weight: 800; color: var(--blue); }
+  .summary-total.warn { color: #ef4444; }
 
-/* PLAY BOARD */
-.court-wrap {
-border-radius: 12px; overflow: hidden;
-border: 2px solid var(–blue); margin-bottom: 14px;
-box-shadow: 0 2px 12px rgba(26,58,143,0.15);
-touch-action: none; position: relative;
-}
-#court-canvas { display: block; width: 100%; touch-action: none; }
-.legend { display: flex; gap: 14px; margin-bottom: 10px; }
-.legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; }
-.legend-dot { width: 12px; height: 12px; border-radius: 50%; }
-.play-notes-card { background: var(–card); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(26,58,143,0.08); }
-.play-notes-label { font-size: 13px; font-weight: 700; color: var(–blue); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
-.play-notes-ta {
-width: 100%; background: var(–bg); border: 1px solid #e2e8f0;
-border-radius: 8px; color: #475569; font-size: 14px;
-padding: 10px 12px; resize: none; font-family: inherit;
-}
+  /* PLAY BOARD */
+  .court-wrap {
+    border-radius: 12px; overflow: hidden;
+    border: 2px solid var(--blue); margin-bottom: 14px;
+    box-shadow: 0 2px 12px rgba(26,58,143,0.15);
+    touch-action: none; position: relative;
+  }
+  #court-canvas { display: block; width: 100%; touch-action: none; }
+  .legend { display: flex; gap: 14px; margin-bottom: 10px; }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #64748b; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .play-notes-card { background: var(--card); border-radius: 12px; padding: 14px; box-shadow: 0 1px 4px rgba(26,58,143,0.08); }
+  .play-notes-label { font-size: 13px; font-weight: 700; color: var(--blue); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .play-notes-ta {
+    width: 100%; background: var(--bg); border: 1px solid #e2e8f0;
+    border-radius: 8px; color: #475569; font-size: 14px;
+    padding: 10px 12px; resize: none; font-family: inherit;
+  }
 
-/* hidden tab content */
-.tab-content { display: none; }
-.tab-content.active { display: block; }
+  /* hidden tab content */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
 </style>
-
 </head>
 <body>
 
@@ -229,7 +227,6 @@ padding: 10px 12px; resize: none; font-family: inherit;
 <div id="content">
 
   <!-- SQUAD TAB -->
-
   <div class="tab-content active" id="content-squad">
     <div class="squad-header">
       <div class="section-title">Squad</div>
@@ -252,7 +249,6 @@ padding: 10px 12px; resize: none; font-family: inherit;
   </div>
 
   <!-- GAME DAY TAB -->
-
   <div class="tab-content" id="content-game">
     <div class="section-title">Game Day</div>
     <div class="section-sub">Tap each player to mark them as played. ⚠️ flags consecutive quarters.</div>
@@ -272,7 +268,6 @@ padding: 10px 12px; resize: none; font-family: inherit;
   </div>
 
   <!-- PLAY BOARD TAB -->
-
   <div class="tab-content" id="content-plays">
     <div class="section-title">Play Board</div>
     <div class="section-sub">Drag players to set positions and design plays.</div>
@@ -404,379 +399,388 @@ function renderSquad() {
           <button class="edit-btn" onclick="startEdit(${p.id})">✏️</button>
         </div>
         <textarea class="player-notes" rows="2" placeholder="Player notes..." onchange="updateNote(${p.id},this.value)">${esc(p.notes)}</textarea>`;
-
-```
-}
-list.appendChild(card);
-```
-
-});
+    }
+    list.appendChild(card);
+  });
 }
 
 function startEdit(id) {
-editingId = id;
-renderSquad();
-const inp = document.getElementById(‘edit-name-’+id);
-if (inp) inp.focus();
+  editingId = id;
+  renderSquad();
+  const inp = document.getElementById('edit-name-'+id);
+  if (inp) inp.focus();
 }
 
 function saveEdit(id) {
-const name = document.getElementById(‘edit-name-’+id).value.trim();
-const reg = document.getElementById(‘edit-reg-’+id).value.trim();
-players = players.map(p => p.id===id ? {…p, name: name||p.name, regNumber: reg} : p);
-editingId = null;
-savePlayers();
-renderSquad();
+  const name = document.getElementById('edit-name-'+id).value.trim();
+  const reg = document.getElementById('edit-reg-'+id).value.trim();
+  players = players.map(p => p.id===id ? {...p, name: name||p.name, regNumber: reg} : p);
+  editingId = null;
+  savePlayers();
+  renderSquad();
 }
 
 function updateNote(id, val) {
-players = players.map(p => p.id===id ? {…p, notes: val} : p);
-savePlayers();
+  players = players.map(p => p.id===id ? {...p, notes: val} : p);
+  savePlayers();
 }
 
 function addPlayer() {
-const nameEl = document.getElementById(‘new-name’);
-const regEl = document.getElementById(‘new-reg’);
-const name = nameEl.value.trim();
-if (!name) return;
-players.push({id: nextId++, name, regNumber: regEl.value.trim(), notes: ‘’});
-nameEl.value = ‘’; regEl.value = ‘’;
-savePlayers();
-renderSquad();
+  const nameEl = document.getElementById('new-name');
+  const regEl = document.getElementById('new-reg');
+  const name = nameEl.value.trim();
+  if (!name) return;
+  players.push({id: nextId++, name, regNumber: regEl.value.trim(), notes: ''});
+  nameEl.value = ''; regEl.value = '';
+  savePlayers();
+  renderSquad();
 }
 
 function esc(str) {
-return String(str||’’).replace(/&/g,’&’).replace(/</g,’<’).replace(/>/g,’>’).replace(/”/g,’"’);
+  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
 // ─── GAME DAY ─────────────────────────────────────────────────────────────────
 
 function selectQuarter(q) {
-selectedQ = q;
-QUARTERS.forEach(n => {
-document.getElementById(‘qbtn-’+n).classList.toggle(‘active’, n===q);
-});
-document.getElementById(‘q-label’).textContent = ’Quarter ’ + q;
-renderGameGrid();
-renderSummary();
+  selectedQ = q;
+  QUARTERS.forEach(n => {
+    document.getElementById('qbtn-'+n).classList.toggle('active', n===q);
+  });
+  document.getElementById('q-label').textContent = 'Quarter ' + q;
+  renderGameGrid();
+  renderSummary();
 }
 
 function togglePlayer(playerId) {
-const q = selectedQ;
-const arr = gameLog[q];
-if (arr.includes(playerId)) {
-gameLog[q] = arr.filter(id => id !== playerId);
-} else {
-gameLog[q] = […arr, playerId];
-}
-saveGameLog();
-renderGameGrid();
-renderSummary();
+  const q = selectedQ;
+  const arr = gameLog[q];
+  if (arr.includes(playerId)) {
+    gameLog[q] = arr.filter(id => id !== playerId);
+  } else {
+    gameLog[q] = [...arr, playerId];
+  }
+  saveGameLog();
+  renderGameGrid();
+  renderSummary();
 }
 
 function playedConsecutive(playerId) {
-for (let q=1; q<=3; q++) {
-if (gameLog[q].includes(playerId) && gameLog[q+1].includes(playerId)) return [q, q+1];
-}
-return null;
+  for (let q=1; q<=3; q++) {
+    if (gameLog[q].includes(playerId) && gameLog[q+1].includes(playerId)) return [q, q+1];
+  }
+  return null;
 }
 
 function quartersPlayed(playerId) {
-return QUARTERS.filter(q => gameLog[q].includes(playerId)).length;
+  return QUARTERS.filter(q => gameLog[q].includes(playerId)).length;
 }
 
 function renderGameGrid() {
-const grid = document.getElementById(‘game-grid’);
-grid.innerHTML = ‘’;
-players.forEach(p => {
-const played = gameLog[selectedQ].includes(p.id);
-const consec = playedConsecutive(p.id);
-const isWarn = consec && consec.includes(selectedQ);
-const div = document.createElement(‘div’);
-div.className = ‘game-player’ + (played ? (isWarn ? ’ warning’ : ’ played’) : ‘’);
-div.onclick = () => togglePlayer(p.id);
-div.innerHTML = `<span class="check-icon">${played ? '✅' : '⬜'}</span> <div> <div class="game-player-name">${esc(p.name)}</div> ${p.regNumber ?`<div class="game-player-reg">#${esc(p.regNumber)}</div>`: ''} ${isWarn ?`<div class="game-player-warn">⚠️ Consecutive!</div>` : ''} </div>`;
-grid.appendChild(div);
-});
+  const grid = document.getElementById('game-grid');
+  grid.innerHTML = '';
+  players.forEach(p => {
+    const played = gameLog[selectedQ].includes(p.id);
+    const consec = playedConsecutive(p.id);
+    const isWarn = consec && consec.includes(selectedQ);
+    const div = document.createElement('div');
+    div.className = 'game-player' + (played ? (isWarn ? ' warning' : ' played') : '');
+    div.onclick = () => togglePlayer(p.id);
+    div.innerHTML = `
+      <span class="check-icon">${played ? '✅' : '⬜'}</span>
+      <div>
+        <div class="game-player-name">${esc(p.name)}</div>
+        ${p.regNumber ? `<div class="game-player-reg">#${esc(p.regNumber)}</div>` : ''}
+        ${isWarn ? `<div class="game-player-warn">⚠️ Consecutive!</div>` : ''}
+      </div>`;
+    grid.appendChild(div);
+  });
 }
 
 function renderSummary() {
-const grid = document.getElementById(‘summary-grid’);
-grid.innerHTML = ` <div class="summary-head">PLAYER</div> <div class="summary-head">REG</div> <div class="summary-head">QUARTERS</div> <div class="summary-head">QS</div>`;
-players.forEach(p => {
-const consec = playedConsecutive(p.id);
-const total = quartersPlayed(p.id);
-const dotsHtml = QUARTERS.map(q =>
-`<span class="q-dot${gameLog[q].includes(p.id)?' played':''}">${q}</span>`
-).join(’’);
-grid.innerHTML += ` <div class="summary-name">${esc(p.name)}</div> <div class="summary-reg">${p.regNumber ? '#'+esc(p.regNumber) : '—'}</div> <div class="q-dots">${dotsHtml}</div> <div class="summary-total${consec?' warn':''}">${total}${consec?' ⚠️':''}</div>`;
-});
+  const grid = document.getElementById('summary-grid');
+  grid.innerHTML = `
+    <div class="summary-head">PLAYER</div>
+    <div class="summary-head">REG</div>
+    <div class="summary-head">QUARTERS</div>
+    <div class="summary-head">QS</div>`;
+  players.forEach(p => {
+    const consec = playedConsecutive(p.id);
+    const total = quartersPlayed(p.id);
+    const dotsHtml = QUARTERS.map(q =>
+      `<span class="q-dot${gameLog[q].includes(p.id)?' played':''}">${q}</span>`
+    ).join('');
+    grid.innerHTML += `
+      <div class="summary-name">${esc(p.name)}</div>
+      <div class="summary-reg">${p.regNumber ? '#'+esc(p.regNumber) : '—'}</div>
+      <div class="q-dots">${dotsHtml}</div>
+      <div class="summary-total${consec?' warn':''}">${total}${consec?' ⚠️':''}</div>`;
+  });
 }
 
 function renderGame() {
-renderGameGrid();
-renderSummary();
+  renderGameGrid();
+  renderSummary();
 }
 
 function resetGame() {
-if (!confirm(‘Reset the game log? This will clear all quarter data.’)) return;
-gameLog = {1:[],2:[],3:[],4:[]};
-saveGameLog();
-renderGame();
+  if (!confirm('Reset the game log? This will clear all quarter data.')) return;
+  gameLog = {1:[],2:[],3:[],4:[]};
+  saveGameLog();
+  renderGame();
 }
 
 // ─── PLAY BOARD (Canvas - smooth RAF) ────────────────────────────────────────
 
-const posColors = { home:’#1a3a8f’, away:’#e63946’, ball:’#f4a200’ };
+const posColors = { home:'#1a3a8f', away:'#e63946', ball:'#f4a200' };
 const CW = 560, CH = 300;
 
 let canvas, ctx, offscreen, offCtx;
 let rafPending = false;
-let mode = ‘drag’; // ‘drag’ or ‘draw’
+let mode = 'drag'; // 'drag' or 'draw'
 let drawings = []; // [{points:[{x,y}], color}]
 let currentDrawing = null;
-let drawColor = ‘#ffffff’;
+let drawColor = '#ffffff';
 
 function toLogical(clientX, clientY) {
-const r = canvas.getBoundingClientRect();
-return {
-x: (clientX - r.left) * (CW / r.width),
-y: (clientY - r.top) * (CH / r.height)
-};
+  const r = canvas.getBoundingClientRect();
+  return {
+    x: (clientX - r.left) * (CW / r.width),
+    y: (clientY - r.top) * (CH / r.height)
+  };
 }
 function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 
 function scheduleRedraw() {
-if (rafPending) return;
-rafPending = true;
-requestAnimationFrame(() => {
-rafPending = false;
-drawFrame();
-});
+  if (rafPending) return;
+  rafPending = true;
+  requestAnimationFrame(() => {
+    rafPending = false;
+    drawFrame();
+  });
 }
 
 function drawFrame() {
-if (!ctx || !offCtx) return;
-const dpr = window.devicePixelRatio || 1;
-const W = canvas.width, H = canvas.height;
-const scaleX = W / CW, scaleY = H / CH;
+  if (!ctx || !offCtx) return;
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.width, H = canvas.height;
+  const scaleX = W / CW, scaleY = H / CH;
 
-// Composite: offscreen court + dynamic layer
-ctx.clearRect(0, 0, W, H);
-ctx.drawImage(offscreen, 0, 0);
+  // Composite: offscreen court + dynamic layer
+  ctx.clearRect(0, 0, W, H);
+  ctx.drawImage(offscreen, 0, 0);
 
-ctx.save();
-ctx.scale(scaleX, scaleY);
+  ctx.save();
+  ctx.scale(scaleX, scaleY);
 
-// Draw strokes
-drawings.forEach(d => drawStroke(ctx, d));
-if (currentDrawing) drawStroke(ctx, currentDrawing);
+  // Draw strokes
+  drawings.forEach(d => drawStroke(ctx, d));
+  if (currentDrawing) drawStroke(ctx, currentDrawing);
 
-// Draw players
-const R = 18;
-playPositions.forEach(p => {
-ctx.fillStyle = ‘rgba(0,0,0,0.18)’;
-ctx.beginPath(); ctx.arc(p.x+2, p.y+2, R, 0, Math.PI*2); ctx.fill();
-ctx.fillStyle = posColors[p.type];
-ctx.beginPath(); ctx.arc(p.x, p.y, R, 0, Math.PI*2); ctx.fill();
-ctx.strokeStyle = ‘white’; ctx.lineWidth = 2.5;
-ctx.beginPath(); ctx.arc(p.x, p.y, R, 0, Math.PI*2); ctx.stroke();
-if (p.type === ‘ball’) {
-ctx.font = ‘bold 17px Arial’;
-ctx.textAlign = ‘center’; ctx.textBaseline = ‘middle’;
-ctx.fillText(‘🏀’, p.x, p.y);
-} else {
-ctx.fillStyle = ‘white’;
-ctx.font = ‘bold 12px Arial’;
-ctx.textAlign = ‘center’; ctx.textBaseline = ‘middle’;
-ctx.fillText(p.label, p.x, p.y);
-}
-});
+  // Draw players
+  const R = 18;
+  playPositions.forEach(p => {
+    ctx.fillStyle = 'rgba(0,0,0,0.18)';
+    ctx.beginPath(); ctx.arc(p.x+2, p.y+2, R, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = posColors[p.type];
+    ctx.beginPath(); ctx.arc(p.x, p.y, R, 0, Math.PI*2); ctx.fill();
+    ctx.strokeStyle = 'white'; ctx.lineWidth = 2.5;
+    ctx.beginPath(); ctx.arc(p.x, p.y, R, 0, Math.PI*2); ctx.stroke();
+    if (p.type === 'ball') {
+      ctx.font = 'bold 17px Arial';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('🏀', p.x, p.y);
+    } else {
+      ctx.fillStyle = 'white';
+      ctx.font = 'bold 12px Arial';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(p.label, p.x, p.y);
+    }
+  });
 
-ctx.restore();
+  ctx.restore();
 }
 
 function drawStroke(c, d) {
-if (!d.points || d.points.length < 2) return;
-c.save();
-c.strokeStyle = d.color || ‘#fff’;
-c.lineWidth = 3;
-c.lineCap = ‘round’;
-c.lineJoin = ‘round’;
-c.beginPath();
-c.moveTo(d.points[0].x, d.points[0].y);
-for (let i = 1; i < d.points.length; i++) c.lineTo(d.points[i].x, d.points[i].y);
-c.stroke();
-// Arrow head at end
-if (d.points.length >= 2) {
-const last = d.points[d.points.length-1];
-const prev = d.points[Math.max(0, d.points.length-4)];
-const angle = Math.atan2(last.y - prev.y, last.x - prev.x);
-const hs = 12;
-c.beginPath();
-c.moveTo(last.x, last.y);
-c.lineTo(last.x - hs*Math.cos(angle-0.4), last.y - hs*Math.sin(angle-0.4));
-c.moveTo(last.x, last.y);
-c.lineTo(last.x - hs*Math.cos(angle+0.4), last.y - hs*Math.sin(angle+0.4));
-c.stroke();
-}
-c.restore();
+  if (!d.points || d.points.length < 2) return;
+  c.save();
+  c.strokeStyle = d.color || '#fff';
+  c.lineWidth = 3;
+  c.lineCap = 'round';
+  c.lineJoin = 'round';
+  c.beginPath();
+  c.moveTo(d.points[0].x, d.points[0].y);
+  for (let i = 1; i < d.points.length; i++) c.lineTo(d.points[i].x, d.points[i].y);
+  c.stroke();
+  // Arrow head at end
+  if (d.points.length >= 2) {
+    const last = d.points[d.points.length-1];
+    const prev = d.points[Math.max(0, d.points.length-4)];
+    const angle = Math.atan2(last.y - prev.y, last.x - prev.x);
+    const hs = 12;
+    c.beginPath();
+    c.moveTo(last.x, last.y);
+    c.lineTo(last.x - hs*Math.cos(angle-0.4), last.y - hs*Math.sin(angle-0.4));
+    c.moveTo(last.x, last.y);
+    c.lineTo(last.x - hs*Math.cos(angle+0.4), last.y - hs*Math.sin(angle+0.4));
+    c.stroke();
+  }
+  c.restore();
 }
 
 function buildOffscreen() {
-const dpr = window.devicePixelRatio || 1;
-const wrap = document.getElementById(‘court-wrap’);
-const displayW = wrap.clientWidth;
-const displayH = Math.round(displayW * CH / CW);
-offscreen = document.createElement(‘canvas’);
-offscreen.width = displayW * dpr;
-offscreen.height = displayH * dpr;
-offCtx = offscreen.getContext(‘2d’);
-offCtx.scale(displayW * dpr / CW, displayH * dpr / CH);
-paintCourt(offCtx);
+  const dpr = window.devicePixelRatio || 1;
+  const wrap = document.getElementById('court-wrap');
+  const displayW = wrap.clientWidth;
+  const displayH = Math.round(displayW * CH / CW);
+  offscreen = document.createElement('canvas');
+  offscreen.width = displayW * dpr;
+  offscreen.height = displayH * dpr;
+  offCtx = offscreen.getContext('2d');
+  offCtx.scale(displayW * dpr / CW, displayH * dpr / CH);
+  paintCourt(offCtx);
 }
 
 function paintCourt(c) {
-// Floor
-c.fillStyle = ‘#c8a46e’; c.fillRect(0,0,CW,CH);
-c.strokeStyle = ‘#b8944e’; c.lineWidth = 0.5; c.globalAlpha = 0.4;
-for (let y=20;y<CH;y+=20){c.beginPath();c.moveTo(0,y);c.lineTo(CW,y);c.stroke();}
-c.globalAlpha = 1;
-c.strokeStyle = ‘white’; c.lineWidth = 2;
-c.strokeRect(0,0,CW,CH);
-c.beginPath();c.moveTo(280,0);c.lineTo(280,CH);c.stroke();
-c.beginPath();c.arc(280,150,36,0,Math.PI*2);c.stroke();
-c.fillStyle=‘white’;c.beginPath();c.arc(280,150,3,0,Math.PI*2);c.fill();
-// Left paint
-c.fillStyle=‘rgba(26,58,143,0.18)’;c.fillRect(0,101,116,98);
-c.strokeStyle=‘white’;c.lineWidth=2;c.strokeRect(0,101,116,98);
-c.fillStyle=‘white’;c.beginPath();c.arc(116,150,2,0,Math.PI*2);c.fill();
-c.beginPath();c.arc(116,150,36,Math.PI/2,-Math.PI/2,true);c.stroke();
-c.setLineDash([7,5]);c.beginPath();c.arc(116,150,36,Math.PI/2,-Math.PI/2,false);c.stroke();c.setLineDash([]);
-c.lineWidth=5;c.beginPath();c.moveTo(4,136);c.lineTo(4,164);c.stroke();
-c.lineWidth=1.5;c.beginPath();c.moveTo(4,150);c.lineTo(18,150);c.stroke();
-c.lineWidth=2;c.beginPath();c.arc(31,150,7.5,0,Math.PI*2);c.stroke();
-c.fillStyle=‘white’;c.beginPath();c.arc(31,150,2,0,Math.PI*2);c.fill();
-c.lineWidth=1.5;c.beginPath();c.arc(31,150,25,-Math.PI/2,Math.PI/2);c.stroke();
-c.lineWidth=2;
-c.beginPath();c.moveTo(0,18);c.lineTo(88,18);c.stroke();
-c.beginPath();c.moveTo(0,282);c.lineTo(88,282);c.stroke();
-c.beginPath();c.arc(31,150,135,-Math.asin((150-18)/135),Math.asin((150-18)/135));c.stroke();
-// Right paint
-c.fillStyle=‘rgba(220,50,50,0.14)’;c.fillRect(444,101,116,98);
-c.strokeStyle=‘white’;c.lineWidth=2;c.strokeRect(444,101,116,98);
-c.fillStyle=‘white’;c.beginPath();c.arc(444,150,2,0,Math.PI*2);c.fill();
-c.beginPath();c.arc(444,150,36,-Math.PI/2,Math.PI/2,false);c.stroke();
-c.setLineDash([7,5]);c.beginPath();c.arc(444,150,36,-Math.PI/2,Math.PI/2,true);c.stroke();c.setLineDash([]);
-c.lineWidth=5;c.beginPath();c.moveTo(556,136);c.lineTo(556,164);c.stroke();
-c.lineWidth=1.5;c.beginPath();c.moveTo(556,150);c.lineTo(542,150);c.stroke();
-c.lineWidth=2;c.beginPath();c.arc(529,150,7.5,0,Math.PI*2);c.stroke();
-c.fillStyle=‘white’;c.beginPath();c.arc(529,150,2,0,Math.PI*2);c.fill();
-c.lineWidth=1.5;c.beginPath();c.arc(529,150,25,Math.PI/2,-Math.PI/2);c.stroke();
-c.lineWidth=2;
-c.beginPath();c.moveTo(560,18);c.lineTo(472,18);c.stroke();
-c.beginPath();c.moveTo(560,282);c.lineTo(472,282);c.stroke();
-const ang=Math.asin((150-18)/135);
-c.beginPath();c.arc(529,150,135,Math.PI+ang,Math.PI-ang,true);c.stroke();
+  // Floor
+  c.fillStyle = '#c8a46e'; c.fillRect(0,0,CW,CH);
+  c.strokeStyle = '#b8944e'; c.lineWidth = 0.5; c.globalAlpha = 0.4;
+  for (let y=20;y<CH;y+=20){c.beginPath();c.moveTo(0,y);c.lineTo(CW,y);c.stroke();}
+  c.globalAlpha = 1;
+  c.strokeStyle = 'white'; c.lineWidth = 2;
+  c.strokeRect(0,0,CW,CH);
+  c.beginPath();c.moveTo(280,0);c.lineTo(280,CH);c.stroke();
+  c.beginPath();c.arc(280,150,36,0,Math.PI*2);c.stroke();
+  c.fillStyle='white';c.beginPath();c.arc(280,150,3,0,Math.PI*2);c.fill();
+  // Left paint
+  c.fillStyle='rgba(26,58,143,0.18)';c.fillRect(0,101,116,98);
+  c.strokeStyle='white';c.lineWidth=2;c.strokeRect(0,101,116,98);
+  c.fillStyle='white';c.beginPath();c.arc(116,150,2,0,Math.PI*2);c.fill();
+  c.beginPath();c.arc(116,150,36,Math.PI/2,-Math.PI/2,true);c.stroke();
+  c.setLineDash([7,5]);c.beginPath();c.arc(116,150,36,Math.PI/2,-Math.PI/2,false);c.stroke();c.setLineDash([]);
+  c.lineWidth=5;c.beginPath();c.moveTo(4,136);c.lineTo(4,164);c.stroke();
+  c.lineWidth=1.5;c.beginPath();c.moveTo(4,150);c.lineTo(18,150);c.stroke();
+  c.lineWidth=2;c.beginPath();c.arc(31,150,7.5,0,Math.PI*2);c.stroke();
+  c.fillStyle='white';c.beginPath();c.arc(31,150,2,0,Math.PI*2);c.fill();
+  c.lineWidth=1.5;c.beginPath();c.arc(31,150,25,-Math.PI/2,Math.PI/2);c.stroke();
+  c.lineWidth=2;
+  c.beginPath();c.moveTo(0,18);c.lineTo(88,18);c.stroke();
+  c.beginPath();c.moveTo(0,282);c.lineTo(88,282);c.stroke();
+  c.beginPath();c.arc(31,150,135,-Math.asin((150-18)/135),Math.asin((150-18)/135));c.stroke();
+  // Right paint
+  c.fillStyle='rgba(220,50,50,0.14)';c.fillRect(444,101,116,98);
+  c.strokeStyle='white';c.lineWidth=2;c.strokeRect(444,101,116,98);
+  c.fillStyle='white';c.beginPath();c.arc(444,150,2,0,Math.PI*2);c.fill();
+  c.beginPath();c.arc(444,150,36,-Math.PI/2,Math.PI/2,false);c.stroke();
+  c.setLineDash([7,5]);c.beginPath();c.arc(444,150,36,-Math.PI/2,Math.PI/2,true);c.stroke();c.setLineDash([]);
+  c.lineWidth=5;c.beginPath();c.moveTo(556,136);c.lineTo(556,164);c.stroke();
+  c.lineWidth=1.5;c.beginPath();c.moveTo(556,150);c.lineTo(542,150);c.stroke();
+  c.lineWidth=2;c.beginPath();c.arc(529,150,7.5,0,Math.PI*2);c.stroke();
+  c.fillStyle='white';c.beginPath();c.arc(529,150,2,0,Math.PI*2);c.fill();
+  c.lineWidth=1.5;c.beginPath();c.arc(529,150,25,Math.PI/2,-Math.PI/2);c.stroke();
+  c.lineWidth=2;
+  c.beginPath();c.moveTo(560,18);c.lineTo(472,18);c.stroke();
+  c.beginPath();c.moveTo(560,282);c.lineTo(472,282);c.stroke();
+  const ang=Math.asin((150-18)/135);
+  c.beginPath();c.arc(529,150,135,Math.PI+ang,Math.PI-ang,true);c.stroke();
 }
 
 function setMode(m) {
-mode = m;
-document.getElementById(‘btn-drag’).style.background = m===‘drag’ ? ‘var(–blue)’ : ‘#e2e8f0’;
-document.getElementById(‘btn-drag’).style.color = m===‘drag’ ? ‘#fff’ : ‘#64748b’;
-document.getElementById(‘btn-draw’).style.background = m===‘draw’ ? ‘#e63946’ : ‘#e2e8f0’;
-document.getElementById(‘btn-draw’).style.color = m===‘draw’ ? ‘#fff’ : ‘#64748b’;
+  mode = m;
+  document.getElementById('btn-drag').style.background = m==='drag' ? 'var(--blue)' : '#e2e8f0';
+  document.getElementById('btn-drag').style.color = m==='drag' ? '#fff' : '#64748b';
+  document.getElementById('btn-draw').style.background = m==='draw' ? '#e63946' : '#e2e8f0';
+  document.getElementById('btn-draw').style.color = m==='draw' ? '#fff' : '#64748b';
 }
 
 function initCourt() {
-canvas = document.getElementById(‘court-canvas’);
-if (!canvas) return;
+  canvas = document.getElementById('court-canvas');
+  if (!canvas) return;
 
-function resize() {
-const wrap = document.getElementById(‘court-wrap’);
-const dpr = window.devicePixelRatio || 1;
-const displayW = wrap.clientWidth;
-const displayH = Math.round(displayW * CH / CW);
-canvas.width = displayW * dpr;
-canvas.height = displayH * dpr;
-canvas.style.width = displayW + ‘px’;
-canvas.style.height = displayH + ‘px’;
-ctx = canvas.getContext(‘2d’);
-buildOffscreen();
-scheduleRedraw();
-}
-resize();
-window.addEventListener(‘resize’, resize);
+  function resize() {
+    const wrap = document.getElementById('court-wrap');
+    const dpr = window.devicePixelRatio || 1;
+    const displayW = wrap.clientWidth;
+    const displayH = Math.round(displayW * CH / CW);
+    canvas.width = displayW * dpr;
+    canvas.height = displayH * dpr;
+    canvas.style.width = displayW + 'px';
+    canvas.style.height = displayH + 'px';
+    ctx = canvas.getContext('2d');
+    buildOffscreen();
+    scheduleRedraw();
+  }
+  resize();
+  window.addEventListener('resize', resize);
 
-// ── TOUCH ──
-canvas.addEventListener(‘touchstart’, e => {
-e.preventDefault();
-const t = e.touches[0];
-const {x,y} = toLogical(t.clientX, t.clientY);
-if (mode === ‘draw’) {
-currentDrawing = { points:[{x,y}], color: drawColor };
-} else {
-let best=null, bestD=50;
-playPositions.forEach(p=>{const d=Math.hypot(p.x-x,p.y-y);if(d<bestD){bestD=d;best=p.id;}});
-draggingId=best;
-}
-},{passive:false});
+  // ── TOUCH ──
+  canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    const t = e.touches[0];
+    const {x,y} = toLogical(t.clientX, t.clientY);
+    if (mode === 'draw') {
+      currentDrawing = { points:[{x,y}], color: drawColor };
+    } else {
+      let best=null, bestD=50;
+      playPositions.forEach(p=>{const d=Math.hypot(p.x-x,p.y-y);if(d<bestD){bestD=d;best=p.id;}});
+      draggingId=best;
+    }
+  },{passive:false});
 
-canvas.addEventListener(‘touchmove’, e => {
-e.preventDefault();
-const t = e.touches[0];
-const {x,y} = toLogical(t.clientX, t.clientY);
-if (mode === ‘draw’ && currentDrawing) {
-currentDrawing.points.push({x,y});
-} else if (draggingId !== null) {
-const cx = clamp(x,18,CW-18), cy = clamp(y,18,CH-18);
-playPositions = playPositions.map(p=>p.id===draggingId?{…p,x:cx,y:cy}:p);
-}
-scheduleRedraw();
-},{passive:false});
+  canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    const t = e.touches[0];
+    const {x,y} = toLogical(t.clientX, t.clientY);
+    if (mode === 'draw' && currentDrawing) {
+      currentDrawing.points.push({x,y});
+    } else if (draggingId !== null) {
+      const cx = clamp(x,18,CW-18), cy = clamp(y,18,CH-18);
+      playPositions = playPositions.map(p=>p.id===draggingId?{...p,x:cx,y:cy}:p);
+    }
+    scheduleRedraw();
+  },{passive:false});
 
-canvas.addEventListener(‘touchend’, () => {
-if (mode===‘draw’ && currentDrawing && currentDrawing.points.length>1) {
-drawings.push(currentDrawing);
-}
-currentDrawing=null; draggingId=null;
-scheduleRedraw();
-});
+  canvas.addEventListener('touchend', () => {
+    if (mode==='draw' && currentDrawing && currentDrawing.points.length>1) {
+      drawings.push(currentDrawing);
+    }
+    currentDrawing=null; draggingId=null;
+    scheduleRedraw();
+  });
 
-// ── MOUSE ──
-canvas.addEventListener(‘mousedown’, e => {
-const {x,y}=toLogical(e.clientX,e.clientY);
-if (mode===‘draw’) {
-currentDrawing={points:[{x,y}],color:drawColor};
-} else {
-let best=null,bestD=50;
-playPositions.forEach(p=>{const d=Math.hypot(p.x-x,p.y-y);if(d<bestD){bestD=d;best=p.id;}});
-draggingId=best;
-}
-});
-canvas.addEventListener(‘mousemove’, e => {
-const {x,y}=toLogical(e.clientX,e.clientY);
-if (mode===‘draw’ && currentDrawing) {
-currentDrawing.points.push({x,y}); scheduleRedraw();
-} else if (draggingId!==null) {
-const cx=clamp(x,18,CW-18),cy=clamp(y,18,CH-18);
-playPositions=playPositions.map(p=>p.id===draggingId?{…p,x:cx,y:cy}:p);
-scheduleRedraw();
-}
-});
-canvas.addEventListener(‘mouseup’,()=>{
-if(mode===‘draw’&&currentDrawing&&currentDrawing.points.length>1)drawings.push(currentDrawing);
-currentDrawing=null;draggingId=null;scheduleRedraw();
-});
-canvas.addEventListener(‘mouseleave’,()=>{currentDrawing=null;draggingId=null;scheduleRedraw();});
+  // ── MOUSE ──
+  canvas.addEventListener('mousedown', e => {
+    const {x,y}=toLogical(e.clientX,e.clientY);
+    if (mode==='draw') {
+      currentDrawing={points:[{x,y}],color:drawColor};
+    } else {
+      let best=null,bestD=50;
+      playPositions.forEach(p=>{const d=Math.hypot(p.x-x,p.y-y);if(d<bestD){bestD=d;best=p.id;}});
+      draggingId=best;
+    }
+  });
+  canvas.addEventListener('mousemove', e => {
+    const {x,y}=toLogical(e.clientX,e.clientY);
+    if (mode==='draw' && currentDrawing) {
+      currentDrawing.points.push({x,y}); scheduleRedraw();
+    } else if (draggingId!==null) {
+      const cx=clamp(x,18,CW-18),cy=clamp(y,18,CH-18);
+      playPositions=playPositions.map(p=>p.id===draggingId?{...p,x:cx,y:cy}:p);
+      scheduleRedraw();
+    }
+  });
+  canvas.addEventListener('mouseup',()=>{
+    if(mode==='draw'&&currentDrawing&&currentDrawing.points.length>1)drawings.push(currentDrawing);
+    currentDrawing=null;draggingId=null;scheduleRedraw();
+  });
+  canvas.addEventListener('mouseleave',()=>{currentDrawing=null;draggingId=null;scheduleRedraw();});
 
-scheduleRedraw();
+  scheduleRedraw();
 }
 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 renderSquad();
 renderGame();
 </script>
-
 </body>
 </html>
